@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revolted</title>
+    <link rel="shorcut icon" type="image" href="image/shorcut.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo"></h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="video/videoplayback.mp4" muted loop autoplay></video>
+
+      <div class="text">
+        <h2>Wellcome to</h2>
+        <h3>Revolted</h3>
+        <p>Ready To Revolt?</p>
+        <a href="#">Hell Yeah!</a>
+      </div>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
